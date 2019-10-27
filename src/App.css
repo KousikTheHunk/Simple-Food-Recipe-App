@@ -1,0 +1,229 @@
+/* ********************************************************** */
+/* Import google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:400,500&display=swap");
+
+/* ********************************************************** */
+
+/* ********************************************************** */
+/* declaration of global variables starts */
+
+:root {
+  --pos-value: 0;
+
+  /* font-colors and background colors */
+  --dark-bg-color: #444a5a;
+  --footer-dark-bg-color: #343434;
+  --light-bg-color: #f2f2f2;
+  --main-font-color: #ffffff;
+  --sec-font-color: #4a4a4a;
+  --main-theme-color: #27ae60;
+
+  /* font-size */
+  --md-font-size: 1.2em;
+  --sm-font-size: 0.9em;
+
+  /* font-family */
+  --main-font-family: "Roboto Mono", sans-serif;
+  --sec-font-family: "Roboto", sans-serif;
+}
+
+/* declaration of global variables ends */
+/* ********************************************************** */
+
+/* ********************************************************** */
+/* root css styling starts */
+
+a {
+  color: var(--main-font-color);
+}
+
+a:hover {
+  color: initial;
+  text-decoration: none !important;
+}
+
+input:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* root css styling ends */
+/* ********************************************************** */
+
+/* ********************************************************** */
+/* Main styling starts */
+
+.main-sec-div {
+  background-color: var(--light-bg-color);
+  padding: 20px 10px;
+}
+
+.main-sec-div {
+  color: var(--sec-font-color);
+}
+
+.sec-div {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.sec-head,
+.sec-desc,
+.sec-content {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.sec-desc,
+.sec-content {
+  padding: 20px 10px;
+  font-size: var(--md-font-size);
+}
+
+.sec-head h1 {
+  position: relative;
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.sec-head h1::after {
+  content: "";
+  background-color: var(--main-theme-color);
+  position: absolute;
+  height: 4px;
+  right: 41%;
+  bottom: -5px;
+  width: 50px;
+}
+
+.sec-desc {
+  width: 80%;
+  margin: 20px auto;
+  font-size: var(--md-font-size);
+}
+
+.sec-desc p {
+  font-family: var(--sec-font-family);
+}
+
+.sec-sub-head h2 {
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+
+.card-div {
+  text-align: center;
+  padding: 15px;
+}
+
+.card-head h3 {
+  position: relative;
+  font-family: var(--main-font-family);
+}
+
+.card-head h3::after {
+  content: "";
+  background-color: var(--main-theme-color);
+  position: absolute;
+  height: 3px;
+  right: 41%;
+  bottom: -8px;
+  width: 50px;
+}
+
+.card-desc p{
+  font-size: var(--sm-font-size);
+}
+
+.card-desc .btn a {
+  color: var(--main-theme-color);
+}
+
+.card-desc .btn {
+  border: 2px solid var(--main-theme-color);
+  border-radius: 20px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+}
+
+.card-desc .btn:hover {
+  background-color: var(--main-theme-color);
+}
+
+.card-desc .btn:hover a {
+  color: var(--main-font-color);
+  text-decoration: none;
+}
+
+.custom {
+  color: var(--main-theme-color);
+}
+
+/* Main styling ends */
+/* ********************************************************** */
+
+/* ************************************************************************* */
+
+/* ********************************************************** */
+/* Responsive view styling starts */
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-head h3::after {
+    right: 35%;
+  }
+  .sec-desc {
+    width: 80%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  .card-head h3::after {
+    right: 43.5%;
+  }
+  .sec-desc {
+    width: 90%;
+  }
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+  .card-head h3::after {
+    right: 42%;
+  }
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+  .card-head h3::after {
+    right: 40%;
+  }
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+}
+
+/* Responsive view styling ends */
+/* ********************************************************** */
