@@ -16,7 +16,7 @@ class Header extends Component {
                   alt="brand-logo"
                   width="40px"
                 />
-                <span className="pl-2 pt-2">Food Recipe App</span>
+                <span className="pl-2 pt-2"> Simple Food Recipe App</span>
               </Link>
             </span>
             <button
